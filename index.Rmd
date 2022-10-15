@@ -1,6 +1,6 @@
 --- 
-title: "YOUR TITLE HERE"
-author: "YOUR NAME HERE"
+title: "Bookdown Test Uging jtr13 Template"
+author: "DS-SL"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 ---
