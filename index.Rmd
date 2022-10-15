@@ -5,5 +5,42 @@ date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 ---
 
-# Down the rabbit-hole
+# Preface
+
+## Git Setup
+
+1. On remote GitHub from Code, copy the url to clone.
+
+https://github.com/ds-sl/jtr13temp.git
+
+2. Open RStudio and create a New Project with version control by Git and use the address above.
+
+3. Use the terminal to renew the git by the following
+
+  * `git init directory name` and confirm the location of `.git`
+  * `cd directory name`
+  * `git remote rm origin`
+  * `git remote add origin git@github-sub:ds-sl/jtr13temp.git`. Note that here we use the alias of ssh we set in `git.config`
+  * `git push -u origin master`
+  
+4. Go back to RStudio and check GIT on top Project Setup.
+
+5. Use Git on top right.
+
+```
+(base) hsuzuki-imacpro-3132:bookdown hsuzuki$ git init jtr13temp 
+Reinitialized existing Git repository in /Users/hsuzuki/Documents/computer/r/bookdown/jtr13temp/.git/
+(base) hsuzuki-imacpro-3132:bookdown hsuzuki$ cd jtr13temp/
+(base) hsuzuki-imacpro-3132:jtr13temp hsuzuki$ git remote add origin git@github-sub:ds-sl/jtr13temp.git
+fatal: remote origin already exists.
+(base) hsuzuki-imacpro-3132:jtr13temp hsuzuki$ git remote rm origin
+(base) hsuzuki-imacpro-3132:jtr13temp hsuzuki$ git remote add origin git@github-sub:ds-sl/jtr13temp.git
+(base) hsuzuki-imacpro-3132:jtr13temp hsuzuki$ git push -u origin main
+error: src refspec main does not match any.
+error: failed to push some refs to 'git@github-sub:ds-sl/jtr13temp.git'
+(base) hsuzuki-imacpro-3132:jtr13temp hsuzuki$ git push -u origin master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+Everything up-to-date
+(base) hsuzuki-imacpro-3132:jtr13temp hsuzuki$ 
+```
 

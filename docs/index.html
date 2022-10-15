@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Bookdown Test Uging jtr13 Template</title>
   <meta name="description" content="Bookdown Test Uging jtr13 Template" />
-  <meta name="generator" content="bookdown 0.29 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.28 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Bookdown Test Uging jtr13 Template" />
   <meta property="og:type" content="book" />
@@ -72,7 +72,10 @@
 <li><a href="./">Bookdown Test Uging jtr13 Template</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Down the rabbit-hole</a></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Preface</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#git-setup"><i class="fa fa-check"></i><b>1.1</b> Git Setup</a></li>
+</ul></li>
 <li class="chapter" data-level="2" data-path="the-pool-of-tears.html"><a href="the-pool-of-tears.html"><i class="fa fa-check"></i><b>2</b> The pool of tears</a></li>
 <li class="chapter" data-level="3" data-path="a-caucus-race-and-a-long-tale.html"><a href="a-caucus-race-and-a-long-tale.html"><i class="fa fa-check"></i><b>3</b> A caucus-race and a long tale</a></li>
 <li class="divider"></li>
@@ -99,9 +102,45 @@
 <p class="author"><em>DS-SL</em></p>
 <p class="date"><em>2022-10-15</em></p>
 </div>
-<div id="down-the-rabbit-hole" class="section level1 hasAnchor" number="1">
-<h1><span class="header-section-number">Chapter 1</span> Down the rabbit-hole<a href="index.html#down-the-rabbit-hole" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="preface" class="section level1 hasAnchor" number="1">
+<h1><span class="header-section-number">Chapter 1</span> Preface<a href="index.html#preface" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="git-setup" class="section level2 hasAnchor" number="1.1">
+<h2><span class="header-section-number">1.1</span> Git Setup<a href="index.html#git-setup" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ol style="list-style-type: decimal">
+<li>On remote GitHub from Code, copy the url to clone.</li>
+</ol>
+<p><a href="https://github.com/ds-sl/jtr13temp.git" class="uri">https://github.com/ds-sl/jtr13temp.git</a></p>
+<ol start="2" style="list-style-type: decimal">
+<li><p>Open RStudio and create a New Project with version control by Git and use the address above.</p></li>
+<li><p>Use the terminal to renew the git by the following</p></li>
+</ol>
+<ul>
+<li><code>git init directory name</code> and confirm the location of <code>.git</code></li>
+<li><code>cd directory name</code></li>
+<li><code>git remote rm origin</code></li>
+<li><code>git remote add origin git@github-sub:ds-sl/jtr13temp.git</code>. Note that here we use the alias of ssh we set in <code>git.config</code></li>
+<li><code>git push -u origin master</code></li>
+</ul>
+<ol start="4" style="list-style-type: decimal">
+<li><p>Go back to RStudio and check GIT on top Project Setup.</p></li>
+<li><p>Use Git on top right.</p></li>
+</ol>
+<pre><code>(base) hsuzuki-imacpro-3132:bookdown hsuzuki$ git init jtr13temp 
+Reinitialized existing Git repository in /Users/hsuzuki/Documents/computer/r/bookdown/jtr13temp/.git/
+(base) hsuzuki-imacpro-3132:bookdown hsuzuki$ cd jtr13temp/
+(base) hsuzuki-imacpro-3132:jtr13temp hsuzuki$ git remote add origin git@github-sub:ds-sl/jtr13temp.git
+fatal: remote origin already exists.
+(base) hsuzuki-imacpro-3132:jtr13temp hsuzuki$ git remote rm origin
+(base) hsuzuki-imacpro-3132:jtr13temp hsuzuki$ git remote add origin git@github-sub:ds-sl/jtr13temp.git
+(base) hsuzuki-imacpro-3132:jtr13temp hsuzuki$ git push -u origin main
+error: src refspec main does not match any.
+error: failed to push some refs to &#39;git@github-sub:ds-sl/jtr13temp.git&#39;
+(base) hsuzuki-imacpro-3132:jtr13temp hsuzuki$ git push -u origin master
+Branch &#39;master&#39; set up to track remote branch &#39;master&#39; from &#39;origin&#39;.
+Everything up-to-date
+(base) hsuzuki-imacpro-3132:jtr13temp hsuzuki$ </code></pre>
 
+</div>
 </div>
             </section>
 
